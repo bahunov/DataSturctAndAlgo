@@ -12,15 +12,16 @@ public class Search {
                 break;
             }
         }
+
         return -1;
     }
 
     public static int binarySearch(int[] orderedList, int searchValue){
         int lowerBound = 0;
-        int upperBound = orderedList.length -1;
+        int upperBound = orderedList.length;
         int midPoint, valueAtMidPoint;
 
-        while(lowerBound <= upperBound){
+        while(lowerBound <= upperBound) {
             midPoint = (lowerBound+upperBound)/2;
             valueAtMidPoint = orderedList[midPoint];
 
